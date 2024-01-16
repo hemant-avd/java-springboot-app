@@ -79,7 +79,7 @@ pipeline {
             steps {
                 script {
                     echo '-------------- Docker Build Started -------------'
-                    app = docker.build("meportal1.jfrog.io/meportaldocker-docker-local/myapp:1.0.1")
+                    app = docker.build("meportal1.jfrog.io/meportaldocker-docker-local/myapp:1.0")
                     echo '-------------- Docker Build Ended -------------'
                 }
             }
@@ -96,7 +96,7 @@ pipeline {
                 }
             }
         }
-
+/*
         stage ("Deploy Stage"){
             steps {
                 script {
@@ -104,7 +104,7 @@ pipeline {
                     }    
                 }
             }
-        
+*/        
 
     }
 }
