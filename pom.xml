@@ -88,5 +88,10 @@
 			
 		</plugins>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>dev</id>
+			<url>file://staging</url>
+		</repository>
+	</distributionManagement>
 </project>
